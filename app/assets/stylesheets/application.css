@@ -1,0 +1,192 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#logo, .logo-font {
+  font-family: 'Overlock', cursive;
+}
+
+#logo {
+  font-size: 3.5em;
+}
+
+.logo-font {
+  font-size: 2.5em;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  color: #b5b5b7;
+  background-color: #677077;
+}
+
+.fa-fort-awesome {
+  margin: 2%;
+}
+
+header {
+  text-align: center;
+  margin: 5% auto;
+  border: 1px solid grey;
+  max-width: 60%;
+  border-radius: 10px;
+  background-color: #252839;
+  color: #f2b632;
+}
+
+header h6 {
+  margin: 3% auto;
+  font-style: italic;
+}
+
+.gamer-add-form {
+  text-align: center;
+}
+
+.gamers-list {
+  text-align: center;
+  margin: 3% auto;
+}
+
+.the-main-container {
+  background-color: rgba(37, 40, 57, 0.8);
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px auto;
+  max-width: 80%;
+}
+
+.gamer-add-form {
+  border-radius: 10px;
+  padding: 5px 4px 20px 4px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(242,182,50,1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(242,182,50,1);
+  box-shadow: 2px 2px 5px 0px rgba(242,182,50,1);
+}
+
+/******** GAMER CARDS ********/
+
+.gamer-age {
+  font-size: 0.8em;
+}
+
+.each-gamer {
+  max-width: 30%;
+  display: inline-block;
+  margin: 3% 20px;
+  padding: 2%;
+  height: 280px;
+  max-height: 280px;
+  vertical-align: text-top;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+
+}
+
+.each-gamer:hover {
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.each-gamer h3 {
+  color: #f2b632;
+}
+
+/******** EACH GAMER CONTROLS ********/
+
+.controls {
+  position: absolute;;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+}
+
+.controls button {
+  width: 40%;
+  font-size: 0.8em;
+  color: white;
+  padding-top: 2%;
+  border-radius: 10px;
+  border: none;
+}
+
+.controls button:first-child {
+  background-color: firebrick;
+  opacity: 0.8;
+}
+
+.controls button:nth-child(2){
+  background-color: green;
+  opacity: 0.8;
+}
+
+.controls button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/********** FORMS **********/
+
+form {
+  text-align: left;
+}
+
+input[type="text"],
+input[type="number"] {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid darkgrey;
+  padding: 4% 2% 2% 2%;
+  color: #677077;
+}
+
+label {
+  padding-top: 10px;
+}
+
+.add-gamer-btn {
+  margin-left: 10px;
+}
+
+.add-gamer-btn:hover{
+  background-color: #f2b632;
+  color: #677077;
+}
+
+.row {
+  margin: 2%;
+}
+
+input:focus,
+button:focus, input:active, button:active {
+  border: none;
+}
+
+/*#252839
+#677077
+#b5b5b7
+#f2b632*/
+
+/********** WHITESPACE **********/
+
+/*
+2da2dc072e62cbe0fbe8c2727fc0b01747bf9949
+*/

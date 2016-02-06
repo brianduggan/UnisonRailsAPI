@@ -1,0 +1,79 @@
+<div class="container">
+  <header>
+    <h1 id="logo"><i class="fa fa-fort-awesome"></i>Unison<i class="fa fa-fort-awesome"></i></h1>
+    <h6>...find a board game geek near you</h6>
+  </header>
+
+  <div ng-controller="GamersController" class="the-main-container">
+
+    <div class="gamer-add-form">
+      <h3 class="logo-font">Add Your Info Here</h3>
+      <form class="gamers-add horiztonal" ng-submit="createGamer()">
+        <div class="form-group row">
+          <div class="col-md-2"></div>
+          <div class="col-md-1">
+            <label for="">Handle</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="newGamer.name" placeholder="Gamer Handle">
+          </div>
+          <div class="col-md-1">
+            <label for="">Location</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="newGamer.location" placeholder="Location">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-2"></div>
+          <div class="col-md-1">
+            <label for="">Age</label>
+          </div>
+          <div class="col-md-3">
+            <input type="number" ng-model="newGamer.age" placeholder="Age">
+          </div>
+          <div class="col-md-1">
+            <label for="">Games</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="newGamer.games" placeholder="Games">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-2"></div>
+          <div class="col-md-1">
+            <label for="">E-Mail</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="newGamer.contact" placeholder="Email Address">
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-primary add-gamer-btn">Add Gamer</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="gamers-list">
+      <h3 class="logo-font">Gamers</h3>
+      <div ng-repeat="gamer in gamers" class="each-gamer">
+        <div class="gamer-info">
+          <h3>{{gamer.name}}<sup> {{gamer.age}}</sup></h3>
+          <h4>{{gamer.location}}</h4>
+          <h4>Wants to Play:</h4>
+          <p>{{gamer.games}}</p>
+          <p> Posted @ {{gamer.created_at | date:'medium' }}</p>
+          <p>{{gamer.hello}}</p>
+        </div>
+        <div class="controls">
+          <button ng-click="deleteGamer(gamer.id)">Delete Gamer</button>
+          <button><a href="mailto:{{gamer.contact}}?Subject=Let%27s%20Play%20{{gamer.games}}">Email Contact</a></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
