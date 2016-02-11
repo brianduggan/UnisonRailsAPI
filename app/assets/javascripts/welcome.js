@@ -30,8 +30,5 @@ app.controller('GamersController', ['$scope', '$http', function($scope, $http){
 
   getGamers();
 
-  $http.get('https://www.boardgamegeek.com/xmlapi2/search?query=Dominion').then(function(response){
-    console.log(response);
-  })
 
 }]);
